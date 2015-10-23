@@ -1,6 +1,6 @@
 <h1>Most Shared Posts</h1>
 
-Most Shared Posts,  para yaes un plugin que nos muestra la popularidad de un artículo (URL), crea un conteo de todos los megusta de facebook que se han generado en esa URL, los Tweet y los Google +. El plugin tiene más de 2 años sin modificar y lo he agarrado y cambiado algunas cosas para mejorar en cuestión de presentación de la información al usuario.
+Most Shared Posts, es un plugin que nos muestra la popularidad de un artículo (URL), crea un conteo de todos los megusta de facebook que se han generado en esa URL, los Tweet y los Google +. El plugin tiene más de 2 años sin modificar y lo he agarrado y cambiado algunas cosas para mejorar en cuestión de presentación de la información al usuario.
 
 Aqui puedes conseguir el Plugin origianl; http://www.tomanthony.co.uk/wordpress-plugins/most-shared-posts/comment-page-3/
 
