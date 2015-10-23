@@ -1,114 +1,30 @@
-=== Most Shared Posts - Social Media counter for Twitter, Facebook & Google+ ===
-Contributors: tomanthony
-Link: http://www.tomanthony.co.uk/wordpress-plugins/most-shared-posts/
-Donate link:  https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZS48RS294BLGN
-Description:  A widget to list posts by those with the most social shares (Facebook likes, Twitter tweets and Google +1s) in your sidebar.
-Tags: facebook, like button, twitter, tweet, google, plusone, shares, social media, sharing, social, seo, popular, posts, sharethis, addthis, sharedaddy
-Requires at least: 2.8
-Tested up to: 3.2.1
-Version: 1.1.0
-Stable tag: 1.1.0
-Author:       Tom Anthony
-Author URI:   http://www.tomanthony.co.uk/
+<h1>Most Shared Posts</h1>
 
-== Description ==
+Most Shared Posts plugin es un plugin que nos muestra la popularidad de un artículo (URL), crea un conteo de todos los megusta de facebook que se han generado en esa URL, los Tweet y los Google +. El plugin tiene mas de 2 años sin modificar y lo he agarrado y cambiado algunas cosas para mejorar en cuenstion de presentacon de la informacion a el usuario.
 
-Track your most popular blog posts, sorted by those with the most social shares. It checks the number of Facebook Likes, Twitter Tweets, and Google +1s. You can display them to your users or just view the data in the WP admin area.
+Aqui puedes conseguir el Plugin origianl; http://www.tomanthony.co.uk/wordpress-plugins/most-shared-posts/comment-page-3/
 
-Features include:
+Dentro de tu panel de administración podrás obtener los mejores 100 artículos de tu sitio web, los mejores del mes, los mejores del año y los mejores 10 de la semana. Estos datos se pueden utilizar para realizar análisis del contenido y replicar el tipo de artículos más populares. 
 
-* You can choose which of the 3 social counts to include.
-* Caches results to ensure good performance. Older posts are cached for longer.
-* For beginners, it is very easy to install with no necessary customisation.
-* Can include a list of most shared posts in a post/page using a shortcode.
-* Various layout options, including post thumbnails.
-
-* [Most Shared Posts](http://www.tomanthony.co.uk/wordpress-plugins/most-shared-posts/) plugin homepage.
-* [Follow @tomanthonyseo on Twitter](http://twitter.com/tomanthonyseo).
-
-== Installation ==
-
-The steps to install 'Most Shared Posts' are quite simple:
-
-1. Upload `most-shared-posts` directory to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. You are now collecting data, which you can view in Dashboard->Most Shared Posts Stats.
-4. NOTE: The plugin throttles how quickly it gathers the social data, to ensure it does not cause any slowness for your users. For small sites with less than 100 posts, this should typically be done in the first hour. For sites with other 2000 posts it could take a day or more.
-
-If you'd like display the count to your users then add a widget:
-
-1. Go to the 'Widgets' page in the 'Appearance' section of WordPress.
-2. Now you can add the widget to different pages of your site. Recommended pages to add the widget: "Sidebar Index", "Sidebar Single", "Sidebar Category"
-3. You can customise the plugin differently for each of these sections should you wish.
-
-Please consider a donation! :)
-
-== Upgrade Notice ==
-
-= 1.1.0 =
-Improves data collection, adds a stats panel in WP admin, and adds a shortcode option.
-
-== Frequently Asked Questions ==
-
-= I just installed and refreshed the page, but my most shared posts are not at the top of the list? =
-
-The plugin will take a little time to collect all the data about your posts. It does so in batches so as not to upset the social networks by requesting too much data at once. You should find that it'll sort itself out and catch up quite quickly.
-
-= I just got tweeted but the count hasn't updated! Why not? =
-
-The results for each post are cached for varying lengths of time depending on the posts age. Very recent posts (less than 2 days old) are cached for an hour, and then older posts are cached for incrementally longer periods of time. Posts in the last month are cached for 12 hours, posts 1-6 months old are cached for 48 hours and older posts are cached for a week.
-
-= My older posts aren't showing up! =
-
-When you add an instance of the widget to a sidebar in the WordPress admin section, you can customise how far back you wish to look; the default is 2 years.
-
-= Where can I change how many posts are included in the list? =
-
-When you add an instance of the widget to a sidebar in the WordPress admin section, you can customise how many posts to include; the default is 5.
-
-= I activated the plugin, but I don't see it.   =
-
-This plugin is a widget, so after activating it you need to go to the Appearance->Widgets section of your WordPress settings and select which pages you'd like it to appear on.
-
-= Can I include the count inside a post or a page? =
-
-Yes - there is now a shortcode option. The shortcode has a few options (all are optional):
+Cuenta con dos opciones para mostrar los datos del lado del cliente, podremos agregar un widget donde tendremos la opción de modificar el número de post a mostrar y el tiempo de antigüedad de los artículos (dias o meses). También podemos agregar un código corto para mostrar los mismos datos donde queramos:
 
 [most-shared-posts num_posts="5" max_month_age="24" title="Most Shared Posts"]
 
-= I have no shares. How depressing... help! =
+<h2>23/10/2015</h2>
+Del archivo msp-widget.php se se han cambiado las siguientes líneas;
 
-Assuming you're providing content worthy of being shared� Make sure you are including sharing buttons on your blog in a consistent fashion. I recommend adding them into your theme, or alternatively:
+.- Línea 71; se agrego una imagen despues del titulo del widget con el fin de darle más contexto a la información mostrada.
 
-* Alex Moss, of Pleer, has created some great social button plugins for Twitter, Facebook and Google+.
-* The AddThis plugin is very popular, and provides a variety of sharing buttons.
-* At sharethis.com, they provide a variety of sharing plugins.
-* The Sharedaddy plugin, part of Jetpack from WordPress.com, provides a range of social buttons.
+.- Línea 216; se agrego la imagen destacada del post, esta parte se modificara en un futuro para ya que actualmente muestra la imagen original y con css se cambian las dimensiones, lo mas ideal seria llamara de wordpress una imagen más pequeña para no hacer más pesada la pagina. 
 
-== Screenshots ==
+.- Línea 234; se agregó una imagen que se muestra en la parte inferior derecha de cada imagen destacada, la imagen muestra una gráfica ascendente, dando a entender que este artículo está creando tendencia en las redes sociales. 
 
-1. Widget Settings.
-2. Most Shared Posts Widget on Sofa Avatar Theme's sidebar.
-3. Social metrics shown in admin dashboard.
+.- Línea 255; se agregó la variable “$total_tendencia” para sumar el conteo de todos los números de las redes sociales para despues mostrarlo en la línea 260. 
 
-== Changelog ==
+<h2>Este es el resultado obtenido por las modificaciones:</h2>
+<center><img src="http://www.azulweb.net/wp-content/uploads/2015/10/MSP.png"></center>
+Pedes entrar a <a href="http://www.azulweb.net/">http://www.azulweb.net/</a> y ver el resultado.
 
-= 1.0.0 =
-
-* Initial release.
-
-= 1.0.1 =
-
-* Update on the format of the API requests for added robustness.
-* Added link to the FAQ on plugin activation.
-
-= 1.1.0 =
-
-* Can now view social stats in admin area (with or without an active widget).
-* Added a shortcode option [most-shared-posts] to include within posts/pages.
-* Data now collected without an active widget.
-* Improved method for scheduling data collection.
-* Various code tidying and improvements.
-
-
-
+<h2>Esta es la parte de administracion:</h2>
+<center><img src="http://www.azulweb.net/wp-content/uploads/2015/10/MSP-ADMIN.png"></center>
+<h3>El plugin original fue creado por @TomAnthonySEO</h3>
