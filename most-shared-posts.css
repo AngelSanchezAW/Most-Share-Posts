@@ -1,0 +1,65 @@
+.share-counts img
+{
+	/*margin: 3px;
+	margin-right: 6px;
+	margin-left: 15px;*/
+	margin-right: 3px;
+	background-color: transparent;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+
+.msp-title{
+    color: #444;
+    text-align: justify;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 5px;
+}    
+
+.msp-imagen{
+	width: 300px;
+	height: 150px;
+}
+
+.msp-tendenciaimg{
+	float: right;
+	margin-top: -40px;
+}
+
+.msp-imagen:hover{
+	opacity: .5;
+}
+.share-counts-smaller
+{
+	font-size: .77em;
+    font-weight: bold;
+}
+
+.share-counts-standard
+{
+}
+
+.share-counts-bigger
+{
+	font-size: 1.1em;
+}
+
+.share-counts-even-bigger
+{
+	font-size: 1.2em;
+}
+
+.share-counts-huge
+{
+	font-size: 1.4em;
+}
+
+.most-shared-posts
+{
+
+}
+
+.msp-fondo-tendencia{
+	position: absolute;
+}
