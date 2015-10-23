@@ -214,7 +214,7 @@ class Most_Shared_Posts extends WP_Widget {
 				echo '<h3 class="post-title" >';
 			
 			echo '<a href="' . get_permalink() .'?utm_source=interno&utm_medium=widgets&utm_campaign=mps'. '" rel="bookmark">' . '<img class="msp-imagen wp-post-image" src="'.$imgDestacada.'" class="attachment-post-thumbnail wp-post-image" alt="'. get_the_title() .'" title="'. get_the_title() .'" />' . '</a>';
-			//echo '<img class="msp-imagen wp-post-image msp-fondo-tendencia" width="100%" height="80"  src="http://www.azulweb.net/wp-content/uploads/2015/10/tendencia_img.png">';
+			
 			if ($h3_wrap)
 				echo '</h3>';
 			
