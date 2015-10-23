@@ -21,6 +21,8 @@ Del archivo msp-widget.php se se han cambiado las siguientes líneas;
 
 .- Línea 255; se agregó la variable “$total_tendencia” para sumar el conteo de todos los números de las redes sociales para despues mostrarlo en la línea 260. 
 
+<h4>Nota: En los link´s de los post se agregaron parámetros para obtener informacion de Goolge Analytics, la idea es saber que tantos clic se generan en cada post '?utm_source=interno&utm_medium=widgets&utm_campaign=mps'</h4>
+
 <h2>Este es el resultado obtenido por las modificaciones:</h2>
 <center><img src="http://www.azulweb.net/wp-content/uploads/2015/10/MSP.png"></center>
 Pedes entrar a <a href="http://www.azulweb.net/">http://www.azulweb.net/</a> y ver el resultado.
