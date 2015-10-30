@@ -204,16 +204,21 @@ class Most_Shared_Posts extends WP_Widget {
 			echo '<li>';
             
             //Sacar imagen destacada
-			global $post;
-            $thumbID = get_post_thumbnail_id( $post->ID );
-            $imgDestacada = wp_get_attachment_url( $thumbID );
-            //Sacar imagen destacada
+               // Ruta de la imagen destacada (miniatura y otros tamaños)
+               global $post;
+               $thumbID = get_post_thumbnail_id( $post->ID );
+               $imgDestacada = wp_get_attachment_image_src( $thumbID, 'medium' ); // Sustituir por thumbnail, medium, large o full
+               // thumbnail; si necesitamos la ruta de la miniatura. (150px x 150px)
+               // medium; tamaño mediano. (300px de ancho)
+               // large; tamaño grande. (Si la image no es muy grande sale en tamaño completo)
+               // full; tamaño completo, es decir, tal como se ha subido la foto al sistema.
+           //Sacar imagen destacada
 
 	
 			if ($h3_wrap)
 				echo '<h3 class="post-title" >';
 			
-			echo '<a href="' . get_permalink() .'?utm_source=interno&utm_medium=widgets&utm_campaign=mps'. '" rel="bookmark">' . '<img class="msp-imagen wp-post-image" src="'.$imgDestacada.'" class="attachment-post-thumbnail wp-post-image" alt="'. get_the_title() .'" title="'. get_the_title() .'" />' . '</a>';
+			echo '<a href="' . get_permalink() .'?utm_source=interno&utm_medium=widgets&utm_campaign=mps'. '" rel="bookmark">' . '<img class="msp-imagen wp-post-image" src="'.$imgDestacada[0].'" class="attachment-post-thumbnail wp-post-image" alt="'. get_the_title() .'" title="'. get_the_title() .'" />' . '</a>';
 			
 			if ($h3_wrap)
 				echo '</h3>';
