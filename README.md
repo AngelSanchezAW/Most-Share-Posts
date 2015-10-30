@@ -30,3 +30,10 @@ Pedes entrar a <a href="http://www.azulweb.net/">http://www.azulweb.net/</a> y v
 <h2>Esta es la parte de administracion:</h2>
 <center><img src="http://www.azulweb.net/wp-content/uploads/2015/10/MSP-ADMIN.png"></center>
 <h3>El plugin original fue creado por @TomAnthonySEO</h3>
+
+<h2>30/10/2015</h2>
+<h3>Tamaño de imagen destacada</h3>
+Anteriormente la imagen destacada que colocábamos en el widget era la original que subíamos al servidor, esto puede tener problemas ya que en algunas ocasiones la imagen es muy pesada. Se modifico el código para solicitar la URL de la imagen mediana que tiene como ancho 300px.
+
+Lineas modificadas; 206 y 2018.
+
