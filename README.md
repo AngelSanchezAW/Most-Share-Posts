@@ -1,5 +1,5 @@
 <h1>Most Shared Posts</h1>
-
+<img src="http://www.azulweb.net/wp-content/uploads/2015/10/Portada-Most-Shared-Posts.png">
 Most Shared Posts, es un plugin que nos muestra la popularidad de un artículo (URL), crea un conteo de todos los megusta de facebook que se han generado en esa URL, los Tweet y los Google +. El plugin tiene más de 2 años sin modificar, he cambiado algunas cosas para mejorar la presentación de la información al usuario.
 
 Aqui puedes conseguir el Plugin origianl; http://www.tomanthony.co.uk/wordpress-plugins/most-shared-posts/comment-page-3/
@@ -36,4 +36,3 @@ Pedes entrar a <a href="http://www.azulweb.net/">http://www.azulweb.net/</a> y v
 Anteriormente la imagen destacada que colocábamos en el widget era la original que subíamos al servidor, esto puede tener problemas ya que en algunas ocasiones la imagen es muy pesada. Se modifico el código para solicitar la URL de la imagen mediana que tiene como ancho 300px.
 
 Lineas modificadas; 206 y 2018.
-
